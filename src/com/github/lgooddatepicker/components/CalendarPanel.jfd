@@ -1,0 +1,178 @@
+JFDML JFormDesigner: "5.2.1.0.138" Java: "1.8.0_121" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "5, 0, 5"
+			"$rowSpecs": "center:6, 0, center:5, 80, center:5, 0, center:5"
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+				"$columnSpecs": "pref, pref, pref, pref:grow, pref, pref, pref"
+				"$rowSpecs": "fill:pref:grow"
+				"$columnGroupIds": "1, 1, 0, 0, 0, 1, 1"
+			} ) {
+				name: "headerControlsPanel"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonPreviousYear"
+					"text": "<<"
+					"focusable": false
+					"focusPainted": false
+					"horizontalTextPosition": 0
+					"margin": new java.awt.Insets( 5, 6, 5, 6 )
+					"font": &Font0 new java.awt.Font( "Monospaced", 1, 12 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonPreviousYearActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 1
+					"gridY": 1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonPreviousMonth"
+					"text": " < "
+					"focusable": false
+					"focusPainted": false
+					"horizontalTextPosition": 0
+					"margin": new java.awt.Insets( 5, 6, 5, 6 )
+					"font": #Font0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonPreviousMonthActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 2
+					"gridY": 1
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "pref:grow, pref, pref:grow"
+					"$rowSpecs": "fill:pref:grow"
+				} ) {
+					name: "monthAndYearOuterPanel"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "pref, max(pref;1px), pref"
+						"$rowSpecs": "fill:pref:grow"
+					} ) {
+						name: "monthAndYearInnerPanel"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelMonth"
+							"text": "September"
+							"horizontalAlignment": 4
+							"opaque": true
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "labelMonthIndicatorMousePressed", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "labelIndicatorMouseEntered", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "labelIndicatorMouseExited", true ) )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 1
+							"gridY": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelYear"
+							"text": "2100"
+							"opaque": true
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "labelYearIndicatorMousePressed", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "labelIndicatorMouseEntered", true ) )
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "labelIndicatorMouseExited", true ) )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 3
+							"gridY": 1
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+						"gridY": 1
+					} )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 4
+					"gridY": 1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonNextMonth"
+					"text": " > "
+					"focusable": false
+					"focusPainted": false
+					"horizontalTextPosition": 0
+					"margin": new java.awt.Insets( 5, 6, 5, 6 )
+					"font": #Font0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonNextMonthActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 6
+					"gridY": 1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonNextYear"
+					"text": ">>"
+					"focusable": false
+					"focusPainted": false
+					"horizontalTextPosition": 0
+					"margin": new java.awt.Insets( 5, 6, 5, 6 )
+					"font": #Font0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonNextYearActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+					"gridX": 7
+					"gridY": 1
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 1
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+				"$columnSpecs": "min, min, min, default:grow, default:grow, default:grow, default:grow, default:grow, default:grow, default:grow, min"
+				"$rowSpecs": "fill:min, fill:2px, fill:default:grow, fill:1px, fill:min, fill:default:grow, fill:default:grow, fill:default:grow, fill:default:grow, fill:default:grow, fill:default:grow, fill:min"
+				"$columnGroupIds": "0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0"
+				"$rowGroupIds": "0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0"
+			} ) {
+				name: "centerPanel"
+				"background": new java.awt.Color( 210, 210, 210, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 3
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "6, 0, 0:1.0, 0, 6"
+				"$rowSpecs": "0:1.0"
+				"$alignTop": true
+				"$alignLeft": true
+			} ) {
+				name: "footerPanel"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labelSetDateToToday"
+					"text": "Today: Feb 12, 2016"
+					"horizontalAlignment": 0
+					"opaque": true
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labelClearDate"
+					"text": "Clear"
+					"opaque": true
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 3
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 5
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 360, 295 )
+		} )
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "40:1.0, 1, 26"
+			"$rowSpecs": "0:1.0"
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "yearEditorPanel"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "doneEditingYearButton"
+				"focusPainted": false
+				"focusable": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "doneEditingYearButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 2
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 315 )
+			"size": new java.awt.Dimension( 115, 25 )
+		} )
+	}
+}

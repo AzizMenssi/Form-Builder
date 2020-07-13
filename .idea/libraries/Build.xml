@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Build">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Build/Form.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Build/FormRun.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
